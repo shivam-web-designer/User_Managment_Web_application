@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>User Dashboard</h2>
+
+{% if role == 'admin' %}
+<a href="/admin">Go to Admin Panel</a>
+{% endif %}
+
+<p>You are logged in successfully!</p>
+{% endblock %}
